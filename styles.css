@@ -1,0 +1,117 @@
+/* POLICES */
+
+@font-face
+{
+    font-family: 'Ballpark';
+    src: url('polices/ballpark.eot') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg') format('svg');
+}         
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg') format('svg');
+}
+
+h2, nav
+{
+    font-family: Dayrom, sans-serif;
+    font-weight: normal;
+}
+
+header, body, footer
+{
+    font-family: 'Trebuchet MS', sans-serif;
+} 
+
+header strong
+{
+    font-family: Ballpark, sans-serif;
+    font-size: 2.5em;
+}
+
+html
+{
+    background-image: url(images/fond_jaune.png);
+    width: 1200px;
+}
+
+
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background: url(images/separateur.png) scroll repeat-x bottom ;
+    height: 110px;
+
+}
+
+header div
+{
+    margin: 5px;
+    align-content: center;
+}
+
+header div h2
+{
+    margin: 0px;
+    font-size: 1.2em;
+}
+
+header nav
+{
+    width: 30%;
+}
+
+header nav ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header nav li:hover
+{
+    color: #760001;
+    border-bottom: 3px #760001 solid;
+}
+
+
+
+/* BANNIERE */
+
+#Pont
+{
+    background: url(images/sanfrancisco.jpg) scroll no-repeat center;
+    width: 950px;
+    height: 219px;
+    box-shadow: 3px 3px 3px black;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+#Vacs
+{
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#B1
+{
+    background-color: #760001;
+    color: #ffffff;
+}
