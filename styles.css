@@ -41,6 +41,11 @@ html
     width: 1200px;
 }
 
+ul
+{
+    list-style-type: none;
+}
+
 
 
 /* HEADER */
@@ -51,7 +56,8 @@ header
     justify-content: space-between;
     background: url(images/separateur.png) scroll repeat-x bottom ;
     height: 110px;
-
+    margin-bottom: 25px;
+    padding: 10px;
 }
 
 header div
@@ -73,10 +79,10 @@ header nav
 
 header nav ul
 {
-    list-style-type: none;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-top: 60px;
 }
 
 header nav li:hover
@@ -94,10 +100,11 @@ header nav li:hover
     background: url(images/sanfrancisco.jpg) scroll no-repeat center;
     width: 950px;
     height: 219px;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 0px 3px 3px black;
     margin: auto;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 25px;
 }
 
 #Vacs
@@ -105,13 +112,151 @@ header nav li:hover
     color: #ffffff;
     background-color: rgba(0,0,0,0.5);
     width: 100%;
+    height: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
 
 }
 
 #B1
 {
-    background-color: #760001;
+    background-image: url(images/fond_degraderouge.png);
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    height: 29px;
+    width: 115px;
+    margin-right: 10px;
+}
+
+
+
+/* ARTICLE */
+
+#Titre
+{
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+}
+
+#Epingle
+{
+    width: 60px;
+    height: 60px;
+}
+
+article
+{
+    width: 750px;
+    margin-left: 25px;
+}
+
+
+/* CORPS ARTICLE */
+
+#Corps
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ASIDE */
+
+#Bulle
+{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+aside
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #706B64;
+    width: 400px;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px black;
+}
+
+aside p
+{
+    margin: 10px;
+}
+
+#Zozor
+{
+    width: 139px;
+    height: 116px;
+    border: 3px black solid;
+}
+
+body aside ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+
+/* FOOTER */
+
+footer
+{
+    background: url(images/ico_top.png) scroll no-repeat top center, url(images/separateur.png) scroll repeat-x top, url(images/ombre.png) scroll repeat-x top ;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1200px;
+}
+
+footer div
+{
+    width: 375px;
+}
+
+#Tophs
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+#Tophs li
+{
+    border: 1px black solid;
+    height: 69px;
+}
+
+#Amis
+{
+    color: #760001; 
+}
+
+#Amis ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80px;
+    padding: 0px;
+}
+
+#Amis ul li
+{
+    background: url(images/ico_liensexterne.png) scroll no-repeat left ;
+    padding-left: 5px;
 }
